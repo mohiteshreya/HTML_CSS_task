@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .s1
+        {
+            width:220px; 
+            height:220px;
+            border: 2px solid black;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform-origin: center;
+            transform: translate(-50%, -50%);
+            animation-name: spin1;
+            animation-duration: 4s;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+            animation-delay:0s;
+            --angle:0deg
+        }
+        .s2
+        {
+            width:190px; 
+            height:190px;
+            border: 2px solid black;
+            position:absolute;
+             top:50%;
+             left:50%;
+             transform:translate(-50%,-50%);
+            animation-name:spin1;
+            animation-duration: 4s;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+            animation-delay:0s;
+            transform-origin: center;
+            --angle:0deg;
+        }
+        .s3
+        {
+            width:180px; 
+            height:180px;
+            border: 2px solid black;
+            position:absolute;
+             top:50%;
+             left:50%;
+             transform:translate(-50%,-50%);
+            animation-name:spin1;
+            animation-duration: 4s;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+            animation-delay:0s;
+            transform-origin: center;
+            --angle:10deg;
+        }
+        .s4
+        {
+            width:170px;
+             height:170px;
+            border: 2px solid black;
+            position:absolute;
+             top:50%;
+             left:50%;
+             transform:translate(-50%,-50%);
+            animation-name:spin1;
+            animation-duration: 4s;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+            animation-delay:0s;
+            transform-origin: center;
+            --angle:20deg;
+        }
+        .s5
+        {
+            width:160px;
+             height:160px;
+            border: 2px solid black;
+            position:absolute;
+             top:50%;
+             left:50%;
+             transform:translate(-50%,-50%);
+            animation-name:spin1;
+            animation-duration: 4s;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+            animation-delay:0s;
+            transform-origin: center;
+            --angle:30deg;
+        }
+        .s6
+        {
+           width:150px;
+            height:150px;
+            border: 2px solid black;
+            position:absolute;
+             top:50%;
+             left:50%;
+             transform:translate(-50%,-50%);
+            animation-name:spin1;
+            animation-duration: 4s;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+           animation-delay:0s;
+            transform-origin: center;
+            --angle:40deg;
+        }
+        .s7
+        {
+            width: 140px;
+            height: 140px;
+            border: 2px solid black;
+            position:absolute;
+             top:50%;
+             left:50%;
+             transform:translate(-50%,-50%);
+            animation-name:spin1;
+            animation-duration: 4s;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+            animation-delay:0s;
+            transform-origin: center;
+            --angle:50deg;
+        }
+        .s8
+        {
+            width: 130px;
+            height: 130px;
+            border: 2px solid black;
+            position:absolute;
+             top:50%;
+             left:50%;
+             transform:translate(-50%,-50%);
+            animation-name:spin1;
+            animation-duration: 4s;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+            animation-delay:0s;
+            transform-origin: center;
+            --angle:60deg;
+        }
+        .s9
+        {
+            width:120px;
+             height:120px;
+            border: 2px solid black;
+            position:absolute;
+             top:50%;
+             left:50%;
+             transform:translate(-50%,-50%);
+            animation-name:spin1;
+            animation-duration: 4s;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+            animation-delay:0s;
+            transform-origin: center;
+            --angle:70deg;
+        }
+        .s10
+        {
+           width:110px; 
+           height:110px;
+            border: 2px solid black;
+            position:absolute;
+             top:50%;
+             left:50%;
+             transform:translate(-50%,-50%);
+            animation-name:spin1;
+            animation-duration: 4s;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+            animation-delay:0s;
+            transform-origin: center;
+            --angle:80deg;
+        }
+        .s11
+        {
+            width:100px; 
+            height:100px;
+            border: 2px solid black;
+            position:absolute;
+             top:50%;
+             left:50%;
+             transform:translate(-50%,-50%);
+            animation-name:spin1;
+            animation-duration: 4s;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+            animation-delay:0s;
+            transform-origin: center;
+            --angle:90deg;
+        }
+        .s12
+        {
+            width:90px; 
+            height:90px;
+            border: 2px solid black;
+            position:absolute;
+             top:50%;
+             left:50%;
+             transform:translate(-50%,-50%);
+            animation-name:spin1;
+            animation-duration: 4s;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+            animation-delay:0s;
+            transform-origin: center;
+            --angle:100deg;
+        }
+        .s13
+        {
+           width:80px;
+            height:80px;
+            border: 2px solid black;
+            position:absolute;
+             top:50%;
+             left:50%;
+             transform:translate(-50%,-50%);
+            animation-name:spin1;
+            animation-duration: 4s;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+            animation-delay:0s;
+            transform-origin: center;
+            --angle:110deg;
+        }
+        .s14
+        {
+            width:70px;
+             height:70px;
+            border: 2px solid black;
+            position:absolute;
+             top:50%;
+             left:50%;
+             transform:translate(-50%,-50%);
+            animation-name:spin1;
+            animation-duration: 4s;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+            animation-delay:0s;
+            transform-origin: center;
+            --angle:120deg;
+        }
+        .s15
+        {
+           width:60px; 
+           height:60px;
+            border: 2px solid black;
+            position:absolute;
+             top:50%;
+             left:50%;
+             transform:translate(-50%,-50%);
+            animation-name:spin1;
+            animation-duration: 4s;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+            animation-delay:0s;
+            transform-origin: center;
+            --angle:130deg;
+        }
+        .s16
+        {
+            width:50px;
+             height:50px;
+            border: 2px solid black;
+            position:absolute;
+             top:50%;
+             left:50%;
+             transform:translate(-50%,-50%);
+            animation-name:spin1;
+            animation-duration: 4s;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+            animation-delay:0s;
+            transform-origin: center;
+            --angle:140deg;
+        }
+        .s17
+        {
+           width:40px; 
+           height:40px;
+            border: 2px solid black;
+            position:absolute;
+             top:50%;
+             left:50%;
+             transform:translate(-50%,-50%);
+            animation-name:spin1;
+            animation-duration: 4s;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+           animation-delay:0s;
+            transform-origin: center;
+            --angle:150deg;
+        }
+        .s18
+        {
+            width:30px; 
+            height:30px;
+            border: 2px solid black;
+            position:absolute;
+             top:50%;
+             left:50%;
+             transform:translate(-50%,-50%);
+            animation-name:spin1;
+            animation-duration: 4s;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+            animation-delay:0s;
+            transform-origin: center;
+            --angle:160deg;
+        }
+        .s19
+        {
+            width:20px; 
+            height:20px;
+            border: 2px solid black;
+            position:absolute;
+             top:50%;
+             left:50%;
+             transform:translate(-50%,-50%);
+            animation-name:spin1;
+            animation-duration: 4s;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+            animation-delay:0s;
+            transform-origin: center;
+            --angle:170deg;
+        }
+        .s20
+        {
+           width:10px; 
+           height:10px;
+            border: 2px solid black;
+             position:absolute;
+             top:50%;
+             left:50%;
+             transform:translate(-50%,-50%);
+            animation-name:spin1;
+            animation-duration: 4s;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+            animation-delay:0s;
+            transform-origin: center;
+            --angle:180deg;
+        }
+        @keyframes spin1{
+               from{
+                     transform:translate(-50%,-50%) rotate(var(--angle));
+                    }
+                to{
+                     transform:translate(-50%,-50%) rotate(calc(var(--angle) + 360deg));
+                  }
+               }
+       .container
+       {
+            width:220px;
+            height:220px;
+            position:absolute;
+            top:50%;
+            left:50%;
+            transform:translate(-50%, -50%);
+       }
+
+    </style>
+</head>
+<body>
+<div class="container">
+<div class="s1"></div>
+<div class="s2"></div>
+<div class="s3"></div>
+<div class="s4"></div>
+<div class="s5"></div>
+<div class="s6"></div>
+<div class="s7"></div>
+<div class="s8"></div>
+<div class="s9"></div>
+<div class="s10"></div>
+<div class="s11"></div>
+<div class="s12"></div>
+<div class="s13"></div>
+<div class="s14"></div>
+<div class="s15"></div>
+<div class="s16"></div>
+<div class="s17"></div>
+<div class="s18"></div>
+<div class="s19"></div>
+<div class="s20"></div>
+ </div>
+  
+   
+    
+    
+    
+    
+   
+</body>
+</html>

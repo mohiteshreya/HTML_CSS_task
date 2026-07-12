@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&family=Pliant:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="./fontawesome-free-6.7.2-web/fontawesome-free-6.7.2-web/css/all.min.css">
+    <style>
+        #hero
+        {
+            background-size: cover;
+            background-image: url("https://assets.nflxext.com/ffe/siteui/vlv3/a565a928-abda-47bd-860a-55be00b7fefc/web/IN-en-20260615-TRIFECTA-perspective_7ffb95f0-7b86-4dfa-9920-7f5651418d65_large.jpg");
+            background-repeat: no-repeat;
+            background-position: center;
+            height: 95vh;
+             z-index:0;
+             
+        }
+        #shadow
+        {
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            width: 100%;
+            height: 100%;
+            
+            background: linear-gradient(to bottom,rgba(0,0,0,0.7),rgba(0,0,0,0.5),rgba(0,0,0,0.7));
+        }
+        img{
+            position: relative;
+            left: 360px;
+            height: 130px;
+            width: 250px;
+            top: -10px;
+        }
+        #dropdown
+        {
+            width: 40px;
+            height: 80px;
+            position: relative;
+            left: 800px;
+        }
+        select
+        {
+            width: 150px;
+            height: 40px;
+            border-radius: 10px;
+            text-align: center;
+          background-color: black;
+          color: white;
+          border: 2px solid white;
+            font-size: 20px;
+            position: relative;
+            left: 690px;
+            top: -113px;
+        }
+        button{
+            width: 100px;
+            height: 40px;
+            position: relative;
+            top: -194px;
+            left: 1660px;
+            background-color: red;
+            color: white;
+            font-size: 16px;
+            border-radius: 10px;
+        }
+        h1{
+             font-family: "Anton", sans-serif;
+            font-weight: 500;
+            font-style: normal;
+            color: white;
+            font-size: 70px;
+            position: relative;
+            top: 50px;
+            left: 750px;
+            letter-spacing: 5px;
+            
+           
+        }
+        p{
+            color: white;
+            font-size: 30px;
+            position: relative;
+            top: 10px;
+            left: 780px;
+            font-weight: 100px;
+        }
+        #p2
+        {
+            color: white;
+            font-size: 20px;
+            position: relative;
+            left: 680px;
+            top: 20px;
+            font-weight: 30px;
+            
+        }
+        .family
+        {
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+        #email
+        {
+            width: 500px;
+            height: 60px;
+            position: relative;
+            top: 20px;
+            left: 650px;
+            background-color: transparent;
+            border: 1px solid white;
+            border-radius: 5px;
+            color: white;
+        }
+        #start
+        {
+            width: 210px;
+            height: 60px;
+            background-color: red;
+            position: relative;
+            top: 22px;
+            left: 650px;
+            font-size: 25px;
+        }
+       #curve{
+    width: 100%;
+    height: 80px;
+
+    margin-top: -20px;
+
+    border-top: 8px solid #ff0066;
+
+    border-top-left-radius: 50% 100%;
+    border-top-right-radius: 50% 100%;
+
+    background: radial-gradient(
+        ellipse at center top,
+        #1636b8 0%,
+        #08124a 40%,
+        #000 80%
+    );
+}
+            
+        #trend
+        {
+            color: white;
+            position:relative;
+            top: 30px;
+            left: 400px;
+            margin-bottom: 30px;
+            font-size: 40px;
+            
+        }
+        .image
+        {
+            width: 250px;
+            height: 350px;
+            border: 1px solid white;
+            display: inline-block;
+            position: relative;
+           left: 200px;
+           margin-left: 20px;
+           top: 30px;
+        }
+        #movie1
+        {
+            background-image: url(./movie1.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+
+        }
+        #movie2
+        {
+            background-image: url(./movie2.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+
+        }
+        #movie3
+        {
+            background-image: url(./movie3.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+
+        }
+        #movie4
+        {
+            background-image: url(./movie4.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+
+        }
+        #movie5
+        {
+            background-image: url(./movie5.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+
+        }
+        #movie6
+        {
+            background-image: url("./movie6.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+
+        }
+        
+        body
+        {
+            margin: 0;
+            background-color: black;
+        }
+        #headline
+        {
+            position: relative;
+            top: 40px;
+            left: 400px;
+            color: white;
+            font-size: 40px;
+        }
+        .a 
+        {
+            width: 350px;
+            height: 250px;
+            background-image:linear-gradient(135deg,#1f2b63 0%,#1b1f4a 55%,#210d22 100%);
+            display: inline-block;
+            position: relative;
+            top: 20px;
+            margin-left: 40px;
+            border-radius: 16px;
+            vertical-align: top;
+        }
+        #cards
+        {
+            width: 1700px;
+            height: 250px;
+            position: relative;
+            left: 250px;
+            top: 20px;
+        }
+        #head1
+        {   height: 40px;
+            color: white;
+            font-size: 24px;
+            position: relative;
+            left: 10px;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+        #head2
+        {
+
+            font-size: 16px;
+            color: gray;
+            position: relative;
+            left: 3px;
+            font-weight: lighter;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+        #question
+        {
+            width: 600px;
+            height: 700px;
+            position: relative;
+            top: 80px;
+        }
+        #q1
+        {
+            width: 1500px;
+            height: 70px;
+            background-color: #2D2D2D;
+            color: white;
+            position: relative;
+            left: 290px;
+           margin-top: 15px;
+           font-size: 38px;
+           padding-left: 30px;
+           padding-top: 20px;
+        }
+        #tag{
+            color: white;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            font-size: 26px;
+            position: relative;
+            left: 290px;
+            top: 80px;
+           display: block;
+           margin-bottom: 20px;
+
+        }
+        #q2
+        {
+            width: 1500px;
+            height: 70px;
+            background-color: #2D2D2D;
+            color: white;
+            position: relative;
+            left: 290px;
+           margin-top: 15px;
+           font-size: 38px;
+           padding-left: 30px;
+           padding-top: 20px;
+        }
+         
+         #q3
+        {
+            width: 1500px;
+            height: 70px;
+            background-color: #2D2D2D;
+            color: white;
+            position: relative;
+            left: 290px;
+           margin-top: 15px;
+           font-size: 38px;
+           padding-left: 30px;
+           padding-top: 20px;
+        }
+        #q4
+        {
+            width: 1500px;
+            height: 70px;
+            background-color: #2D2D2D;
+            color: white;
+            position: relative;
+            left: 290px;
+           margin-top: 15px;
+           font-size: 38px;
+           padding-left: 30px;
+           padding-top: 20px;
+        }
+         #q5
+        {
+            width: 1500px;
+            height: 70px;
+            background-color: #2D2D2D;
+            color: white;
+            position: relative;
+            left: 290px;
+           margin-top: 15px;
+           font-size: 38px;
+           padding-left: 30px;
+           padding-top: 20px;
+        }
+        #q6
+        {
+            width: 1500px;
+            height: 70px;
+            background-color: #2D2D2D;
+            color: white;
+            position: relative;
+            left: 290px;
+           margin-top: 15px;
+           font-size: 38px;
+           padding-left: 30px;
+           padding-top: 20px;
+        }
+        #title1
+        {
+            color: white;
+            font-size: 36px;
+            position: relative;
+            left: 30px;
+        }
+        i
+        {
+            position: absolute;
+            right: 30px;
+            top: 20px;
+            font-size: 40px;
+        }
+        #info
+        {
+            width: 900px;
+            height: 690px;
+            color: grey ;
+            font-size: 26px;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            padding-left: 100px;
+            padding-top: 100px;
+        }
+        #list
+        {
+        margin-top: 50px;
+        width: 1200px;
+        }
+        .b
+        {
+             width: 300px;
+             display: inline-block;
+             vertical-align: top;
+             margin-left: 90px;
+
+        }
+        ul{
+            padding:0;
+        }
+        li
+        {
+            list-style: none;
+            margin-bottom: 20px;
+        }
+        #dropdown2
+        {
+            width: 40px;
+            height: 80px;
+            position: relative;
+            left: -600px;
+        }
+        #foot
+        {
+            width: 800px;
+            height: 80px;
+            color: grey;
+            position: relative;
+            left: 100px;
+            top: -60px;
+            font-size: 25px;
+        }
+        
+    </style>
+</head>
+<body>
+    
+    <div id="hero">
+        <div id="shadow"></div>
+        <img src="./netf.png" alt="Netflix Logo" width="180">
+        <div id="dropdown">
+            <select>
+                <option>English</option>
+                <option>Hindi</option>
+            </select>
+        </div>
+        <button class="family">Sign in</button>
+        <h1>Unlimited movies,<br> shows, and more</h1>
+        <p class="family">Starts at ₹149. Cancel at any time.</p>
+        <p id="p2" class="family">Ready to watch? Enter your email to create or restart your membership.</p>
+      <input type="text" name="" id="email" placeholder="Email address">
+      <button id="start" class="family">Get started ></button>
+      </div>
+
+      <div id="curve"></div>
+        <div id="content">
+            <h2 id="trend" class="family">Trending Now</h2>
+            <div class="image"id="movie1">
+            </div>
+            <div class="image" id="movie2"></div>
+            <div class="image"id="movie3"></div>
+            <div class="image" id="movie4"></div>
+             <div class="image" id="movie5"></div>
+            <div class="image" id="movie6"></div>
+          
+            <h2 id="headline" class="family">More reasons to join</h2>
+            <div id="cards">
+            <div class="a">
+                <h3 id="head1">Enjoy on your TV</h3>
+                <h4 id="head2">Watch on smart TVs, PlayStation, Xbox, Chromecast, Apple TV, Blu-ray players and more</h4>
+            </div>
+
+            <div class="a">
+
+            <h3 id="head1">Download your shows to<br> watch offline</h3>
+            <h4 id="head2">Save your favourites easily and always have something to watch</h4>
+            </div>
+
+            <div class="a">
+                <h3 id="head1">Watch everywhere</h3>
+                <h4 id="head2">Stream unlimited movies and TV shows on your phone, tablet, laptop, and TV.</h4>
+            </div>
+
+            <div class="a">
+                 <h3 id="head1">Create profiles for kids</h3>
+                <h4 id="head2">Send kids on adventures with their favourite characters in a space made just for them — free with your membership.</h4>
+            </div>
+            </div>
+             <p id="tag">Frequently Asked Question</p>
+                <div id="question">
+                <div id="q1">
+                    What is Netflix?
+                    <i class="fa-solid fa-plus"></i>
+                </div>
+                <div id="q2">
+                    How much does Netflix cost ?
+                    <i class="fa-solid fa-plus"></i>
+                </div>
+                <div id="q3">
+                    where i can watch ?
+                    <i class="fa-solid fa-plus"></i>
+                </div>
+                <div id="q4">
+                    How do i cancle ?
+                    <i class="fa-solid fa-plus"></i>
+                </div>
+                <div id="q5">
+                    where i can watch on Netflix ?
+                    <i class="fa-solid fa-plus"></i>
+                </div>
+                <div id="q6">
+                    Is Netflix good for kids ?
+                    <i class="fa-solid fa-plus"></i>
+                </div>
+                
+                </div>
+        <p id="p2" class="family">Ready to watch? Enter your email to create or restart your membership.</p>  
+        <input type="text" name="" id="email" placeholder="Email address">
+        <button id="start" class="family">Get started ></button>
+        </div>
+        <div id="info">
+            Questions? Call 000-800-919-1743
+            <div id="list">
+            <div class="b">
+            <ul type="none">
+                <li>FAQ</li>
+                <br>
+                <li>Media Center</li>
+                <br>
+                <li>Ways to Watch</li>
+                <br>
+                <li> Cookie preferences</li>
+                <br>
+                <li>Speed Test</li>
+            </ul>
+            </div>
+            <div class="b">
+            <ul type="none">
+                <li>Help Centre </li>
+                <br>
+                <li>Investor Relations </li>
+                <br>
+                <li>Terms of Use</li>
+                <br>
+                <li>Corporate Information</li>
+                <br>
+                <li>Legal Notices</li>
+            </ul>
+            </div>
+            <div class="b">
+            <ul type="none">
+                <li>Account</li>
+                <br>
+                <li>Jobs</li>
+                <br>
+                <li> Privacy</li>
+                <br>
+                <li>Contact Us</li>
+                <br>
+                <li>Only on Netflix</li>
+            </ul>
+            </div>
+            </div>
+            
+        </div>
+        <div id="dropdown2">
+            <select>
+                <option>English</option>
+                <option>Hindi</option>
+            </select>
+        </div>
+        <div id="foot">
+            Netflix India
+            <br>
+           This page is protected by Google reCAPTCHA to ensure you're not a bot.
+        </div>
+    
+    </body>
+</html>
